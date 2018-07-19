@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Content</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h3>Content will come here</h3>
+
+    <div class = "bar bar-header bar-positive">
+        <h1 class = "title">Header</h1>
+        <p class = "balanced">Paragraph 1...</p>
+        <p class = "energized">Paragraph 2...</p>
+    </div>
+
+    <div class="container" *ngFor="let contact of contactlist">
+         <h2 class="name">{{contact.displayName}}</h2> 
+        <p class="number">{{ contact.phoneNumbers }}</p>
+    </div>
+    <div class = "list"> 
+        <label class = "item item-input"> 
+            <input type = "text" placeholder = "Placeholder 1" /> 
+        </label>
+
+        <label class = "item item-input"> 
+            <input type = "text" placeholder = "Placeholder 2" /> 
+        </label> 
+    </div>
+</ion-content>
